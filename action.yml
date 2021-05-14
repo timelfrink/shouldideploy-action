@@ -7,9 +7,6 @@ inputs:
     description: 'Timezone'
     required: True
     default: 'UTC'
-outputs:
-  time: # id of output
-    description: 'Should we deploy?'
 runs:
   using: 'composite'
   steps:

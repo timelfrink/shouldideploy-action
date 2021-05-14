@@ -3,7 +3,7 @@ on: [push]
 jobs:
   should_i_deploy:
     runs-on: ubuntu-latest
-    name: A job to check if we should deploy
+    name: A job to check if you should deploy
     steps:
       # To use this repository's private action,
       # you must check out the repository
