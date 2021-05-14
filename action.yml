@@ -4,7 +4,7 @@ author: Tim Elfrink
 description: Every time you try to deploy we check at shouldideploy.today if this is a good idea.
 inputs:
   timezone: 
-    description: 'Timezone'
+    description: 'Timezone of your product team'
     required: True
     default: 'UTC'
 runs:
