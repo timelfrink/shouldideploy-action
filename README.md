@@ -14,7 +14,7 @@ If you want to force the build and skip the check you can add `force deploy` to 
 ## Example usage
 
 ```
-uses: actions/shouldideploy-action@v1
+uses: actions/shouldideploy-action@v2
 with:
   timezone: 'UTC'
 ```

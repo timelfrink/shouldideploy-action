@@ -9,7 +9,7 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Check if we should deploy
-        uses: ./ # Uses an action in the root directory
+      - name: Check if you should deploy
+        uses: timelfrink/shouldideploy-action@v2
         with:
           timezone: 'Europe/Amsterdam'
