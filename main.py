@@ -7,5 +7,6 @@ req = urllib.request.urlopen(url)
 
 data = json.loads(req.read().decode("utf-8"))
 print(data)
+print(sys.argv[2])
 if not data['shouldideploy']:
     sys.exit('You should not deploy!')

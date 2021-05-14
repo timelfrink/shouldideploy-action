@@ -13,5 +13,5 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - run: python ${{ github.action_path }}/main.py ${{ inputs.timezone }}
+    - run: python ${{ github.action_path }}/main.py ${{ inputs.timezone }} ${{ github.event.head_commit.message }}
       shell: bash
