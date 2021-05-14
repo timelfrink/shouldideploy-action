@@ -1,16 +1,17 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: Should I deploy today? Github action
+author: Tim Elfrink  
+description: Every time you try to deploy we check at shouldideploy.today if this is a good idea.
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
+  timezone: 
+    description: 'Timezone'
+    required: False
+    default: 'UTC'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'Should we deploy?'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  using: 'composite'
+  steps:
+    - run: python ${{ github.action_path }}/main-script.py ${{ inputs.timezone }}
+      shell: bash
