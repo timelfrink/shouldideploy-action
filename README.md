@@ -1,21 +1,21 @@
-# Hello world docker action
+# Should I deploy today?
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action check the website shouldideploy.today and stops deployments if the site tells us not to do so. 
 
 ## Inputs
 
-### `who-to-greet`
+### `timezone`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The timezone which your product team is working in. Default `"UTC"`.
 
 ## Outputs
 
-### `time`
+### `deploy`
 
-The time we greeted you.
+If we should deploy yes or no.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: actions/shouldideploy-action@v1
 with:
-  who-to-greet: 'Mona the Octocat'
+  timezone: 'UTC'

@@ -5,7 +5,7 @@ description: Every time you try to deploy we check at shouldideploy.today if thi
 inputs:
   timezone: 
     description: 'Timezone'
-    required: False
+    required: True
     default: 'UTC'
 outputs:
   time: # id of output
