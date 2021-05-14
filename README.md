@@ -8,12 +8,6 @@ This action check the website shouldideploy.today and stops deployments if the s
 
 **Required** The timezone which your product team is working in. Default `"UTC"`.
 
-## Outputs
-
-### `deploy`
-
-If we should deploy yes or no.
-
 ## Example usage
 
 uses: actions/shouldideploy-action@v1
