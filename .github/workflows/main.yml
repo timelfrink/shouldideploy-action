@@ -10,6 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Check if you should deploy
-        uses: timelfrink/shouldideploy-action@v2
+        uses: timelfrink/shouldideploy-action@v1
         with:
           timezone: 'Europe/Amsterdam'
